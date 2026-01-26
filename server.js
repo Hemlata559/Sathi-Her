@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 
+
 app.use(express.json());
 
 /* ---------------- FAKE DATABASE ---------------- */
@@ -18,7 +19,7 @@ const users = [
   {
     id: 2,
     name: "Neha",
-    verified: true,
+    verified:true,
     route: "A-B",
     mode: "metro",
     available: true,
@@ -27,9 +28,9 @@ const users = [
   {
     id: 3,
     name: "Riya",
-    verified: false,
+    verified: true,
     route: "A-B",
-    mode: "bus",
+    mode: "metro",
     available: true,
     trustScore: 4.2
   }
