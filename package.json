@@ -1,0 +1,24 @@
+{
+  "name": "saathi_her",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fiza0910/Sathi-Her.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Fiza0910/Sathi-Her/issues"
+  },
+  "homepage": "https://github.com/Fiza0910/Sathi-Her#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
