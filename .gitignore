@@ -7,7 +7,7 @@ build/
 .idea/
 *.iml
 
-# Local machine config
+# Local configs
 local.properties
 
 # Firebase (VERY IMPORTANT)
