@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "15826027472",
+    "project_id": "sathi-her",
+    "storage_bucket": "sathi-her.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15826027472:android:606065d7d238ca911a6fd5",
+        "android_client_info": {
+          "package_name": "com.sathiher.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6hlNTz-IwTBy3LO0JZB8cmMlY4DHGDD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
