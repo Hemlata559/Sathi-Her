@@ -1,0 +1,23 @@
+[33mcommit 9a98c39e8657f181438eade2ef609b1398d6f3d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mFiza[m[33m)[m
+Author: fiza <fizax3521@gmail.com>
+Date:   Mon Jan 26 17:38:23 2026 +0530
+
+    Added backend logic, controllers and updated config
+
+[33mcommit 30c4985ffd66a9a20bb765ff634b996aae2029ec[m
+Author: fiza <fizax3521@gmail.com>
+Date:   Mon Jan 26 17:24:14 2026 +0530
+
+    Implement match validation and OTP coordination features
+
+[33mcommit de7a3d66937bfacf26a60a5e7bcd0c8793facda8[m
+Author: fiza <fizax3521@gmail.com>
+Date:   Mon Jan 26 14:08:24 2026 +0530
+
+    Setup backend structure with match & OTP features
+
+[33mcommit ba2cf76c24d9082087a8d524dc122f08921f3d34[m
+Author: fiza <fizax3521@gmail.com>
+Date:   Thu Jan 22 21:14:48 2026 +0530
+
+    initial commit

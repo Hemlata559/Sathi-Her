@@ -2,7 +2,7 @@
 <<<<<<< HEAD
   "name": "saathi_her",
   "version": "1.0.0",
-  "description": "Women safety companion matching backend",
+  "description": "",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
