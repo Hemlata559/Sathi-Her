@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-node_modules
+# combined .gitignore
+node_modules/
+dist/
+venv/
 .env
-=======
-.env
-node_modules
->>>>>>> bb8f3ed71c3406f67766c6efaa3c7e86f07aab46
+
