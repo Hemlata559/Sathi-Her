@@ -41,24 +41,29 @@ android {
 
 dependencies {
 
-    // Firebase BOM (controls versions)
+    // 🔥 Firebase BOM (controls all Firebase versions)
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
 
-    // Firebase Auth ONLY
-    implementation("com.google.firebase:firebase-auth")
+    // 🔐 Firebase Auth (OTP login)
+    implementation("com.google.firebase:firebase-auth-ktx")
 
-    // Compose
+    // 🗄️ Firebase Firestore (Profile storage)
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // 🧩 Compose + AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
+
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
-    implementation("com.google.firebase:firebase-auth")
 
     debugImplementation(libs.androidx.compose.ui.tooling)
 }
+
+
+
 

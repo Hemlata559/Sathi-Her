@@ -1,4 +1,6 @@
 package com.sathiher.app
+import com.sathiher.app.ui.profile.ProfileScreen
+import com.sathiher.app.ui.profile.saveProfileToFirestore
 
 import android.os.Bundle
 import android.util.Log
@@ -31,21 +33,52 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
 @Composable
 fun PhoneLoginScreen(
     auth: FirebaseAuth,
     activity: ComponentActivity
 ) {
+    var isLoggedIn by remember { mutableStateOf(false) }
+    var isProfileCompleted by remember { mutableStateOf(false) }
     var phoneNumber by remember { mutableStateOf("") }
     var otp by remember { mutableStateOf("") }
     var verificationId by remember { mutableStateOf<String?>(null) }
     var isOtpVerified by remember { mutableStateOf(false) }
 
     // ✅ AFTER OTP VERIFIED → HOME SCREEN
+    // 🔹 KEEP isLoggedIn IN SYNC WITH OTP
     if (isOtpVerified) {
-        HomeScreen()
-        return
+        isLoggedIn = true
     }
+
+    // 🔥 ADD THIS BLOCK HERE (BEFORE Column)
+    when {
+        !isLoggedIn -> {
+            // 👇 DO NOTHING → UI BELOW (OTP UI) WILL SHOW
+        }
+
+        isLoggedIn && !isProfileCompleted -> {
+            ProfileScreen(
+                onSave = { name, age, city ->
+                    saveProfileToFirestore(
+                        name,
+                        age,
+                        city
+                    ) {
+                        isProfileCompleted = true
+                    }
+                }
+            )
+            return
+        }
+
+        else -> {
+            HomeScreen()
+            return
+        }
+    }
+
 
     Column(
         modifier = Modifier
